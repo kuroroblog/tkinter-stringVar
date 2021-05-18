@@ -1,5 +1,4 @@
-# tkinter-listbox
-Tkinterのlistboxに関するコード
+# tkinter-stringVar
+TkinterのstringVarに関するコード
 
 # 参考記事
-https://kuroro.blog/python/XMWVRR2MEZAe4bpPDDXE/
