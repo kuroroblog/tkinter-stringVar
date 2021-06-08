@@ -74,6 +74,7 @@ class Application(tk.Frame):
 
         # Frameを親要素として、entry Widgetを作成する。
         # textvariable : 数値情報を扱う変数を代入する。
+        # Entryについて : https://kuroro.blog/python/PUZp77YFxrXvMCjpZbUg/
         self.entryForDoubleVar = tk.Entry(frame, textvariable=self.entryTextVariableForDoubleVar)
 
         # Frameを親要素とした場合に、entry Widgetをどのように配置するのか?
@@ -112,6 +113,7 @@ class Application(tk.Frame):
 
         # Frameを親要素として、checkbutton Widgetを作成する。
         # variable : Boolean情報を扱う変数を代入する。
+        # Checkbuttonについて : https://kuroro.blog/python/gspi4F2pMIkzHN7l0f1F/
         self.checkbutton = tk.Checkbutton(frame, variable=self.checkbuttonVariable)
 
         # Frameを親要素とした場合に、checkbutton Widgetをどのように配置するのか?
@@ -148,6 +150,7 @@ class Application(tk.Frame):
 
         # Frameを親要素として、entry Widgetを作成する。
         # textvariable : 数値情報を扱う変数を代入する。
+        # Entryについて : https://kuroro.blog/python/PUZp77YFxrXvMCjpZbUg/
         self.entryForIntVar = tk.Entry(frame, textvariable=self.entryTextVariableForIntVar)
 
         # Frameを親要素とした場合に、entry Widgetをどのように配置するのか?
@@ -184,8 +187,10 @@ class Application(tk.Frame):
 
         # Frameを親要素として、label Widgetを作成する。
         # textvariable : テキスト情報を扱う変数を代入する。
+        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         self.label = tk.Label(frame, textvariable=self.labelTextVariable)
         # text optionを変更する場合
+        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         # self.label = tk.Label(frame, text='test')
 
         # Frameを親要素とした場合に、label Widgetをどのように配置するのか?
@@ -219,6 +224,7 @@ class Application(tk.Frame):
         super().__init__(master)
 
         # Windowの画面サイズを設定する。
+        # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         self.master.geometry("300x200")
 
         # Windowを親要素として、frame Widget(Frame)を作成する。
@@ -246,4 +252,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = Application(master=root)
     # Windowをループさせて、継続的にWindow表示させる。
+    # mainloopについて : https://kuroro.blog/python/DmJdUb50oAhmBteRa4fi/
     app.mainloop()
