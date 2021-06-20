@@ -9,16 +9,9 @@ class Application(tk.Frame):
     # labelのテキスト情報を動かす関数
     def runLabelText(self, event):
         # get() : label Widgetのテキストを取得する。
-        print(self.labelTextVariable.get())
+        # print(self.labelTextVariable.get())
         # set() : label Widgetのテキストをhogeへ変更する。
-        # self.labelTextVariable.set('hoge')
-
-        # text optionを変更する場合
-        # label Widgetのテキストを取得する。
-        # print(self.label['text'])
-        # label Widgetのテキストをhogeへ変更する。
-        # self.label['text'] = 'hoge'
-        # self.label.configure(text='hoge')
+        self.labelTextVariable.set('hoge')
 
     # StringVar説明用に構成される関数
     def configForStringVar(self, frame):
@@ -33,16 +26,7 @@ class Application(tk.Frame):
         # width : 幅の設定
         # height : 高さの設定
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
-        # self.label = tk.Label(frame, textvariable=self.labelTextVariable, background='blue', width=10, height=5)
-
-        # text optionを変更する場合
-        # text : テキスト情報を設定。
-        # background : 背景色の設定
-        # 色について : https://kuroro.blog/python/YcZ6Yh4PswqUzaQXwnG2/
-        # width : 幅の設定
-        # height : 高さの設定
-        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
-        self.label = tk.Label(frame, text='test', background='blue', width=10, height=5)
+        self.label = tk.Label(frame, textvariable=self.labelTextVariable, background='blue', width=10, height=5)
 
         # label Widgetをクリックした場合に、関数を実行できるようにbind関数を利用する。
         # 第一引数 : イベント内容
