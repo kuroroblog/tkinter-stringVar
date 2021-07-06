@@ -6,7 +6,7 @@ class Application(tk.Frame):
     # label Widgetに関する情報を格納する変数
     label = None
 
-    # labelのテキスト情報を動かす関数
+    # label Widgetのテキスト情報を変更する関数
     def runLabelText(self, event):
         # get() : label Widgetのテキストを取得する。
         # print(self.labelTextVariable.get())
@@ -19,7 +19,7 @@ class Application(tk.Frame):
         # 初期値として、testの文字列を格納する。
         self.labelTextVariable = tk.StringVar(value="test")
 
-        # Frameを親要素として、label Widgetを作成する。
+        # frame Widget(Frame)を親要素として、label Widgetを作成する。
         # textvariable : テキスト情報を表示する。値を可変なself.labelTextVariableとする。
         # background : 背景色の設定
         # 色について : https://kuroro.blog/python/YcZ6Yh4PswqUzaQXwnG2/
@@ -34,7 +34,7 @@ class Application(tk.Frame):
         # bindについて : https://kuroro.blog/python/eI5ApJE1wkU7bHsuwk0H/
         self.label.bind("<ButtonPress>", self.runLabelText)
 
-        # Frameを親要素とした場合に、label Widgetをどのように配置するのか?
+        # frame Widget(Frame)を親要素とした場合に、label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         self.label.pack()
 
@@ -47,7 +47,7 @@ class Application(tk.Frame):
         self.master.geometry("300x200")
 
         # Windowを親要素として、frame Widget(Frame)を作成する。
-        # frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
+        # Frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
         frame = tk.Frame(self.master)
 
         # Windowを親要素とした場合に、frame Widget(Frame)をどのように配置するのか?
